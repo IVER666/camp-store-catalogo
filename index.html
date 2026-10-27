@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1A4648">
+  <meta name="description" content="Explora prendas, novedades y ofertas de Camp Store. Consulta por WhatsApp.">
+  <title>Camp Store | Catálogo de ropa</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="js/productos.js" defer></script>
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <div class="announcement">✨ Descubre tu próximo outfit en CAMP STORE</div>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Navegación principal">
+      <a class="brand" href="#inicio" aria-label="Camp Store inicio"><span class="brand-mark">C</span><span>CAMP <b>STORE</b><small>YOUR STYLE, YOUR WAY</small></span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks">☰</button>
+      <div class="nav-links" id="navLinks"><a href="#inicio">Inicio</a><a href="#catalogo">Catálogo</a><a href="#nosotros">Nosotros</a><a href="#contacto">Contacto</a></div>
+      <a class="nav-cta" href="#catalogo">Explorar colección ↗</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-copy"><span class="eyebrow">NUEVA TEMPORADA · CAMP STORE</span><h1>Tu estilo.<br><em>Tu esencia.</em></h1><p>Prendas para expresarte todos los días. Explora nuestra colección, descubre tu favorito y consúltanos por WhatsApp.</p><div class="hero-actions"><a href="#catalogo" class="btn btn-primary">Ver colección <span>→</span></a><a href="#nosotros" class="btn btn-outline">Conócenos</a></div><div class="hero-stats"><div><strong>Estilo</strong><span>para cada día</span></div><div><strong>Variedad</strong><span>para elegir</span></div><div><strong>Atención</strong><span>personalizada</span></div></div></div>
+        <div class="hero-photo"><img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=1100&q=85&auto=format&fit=crop" alt="Colección de moda y ropa" fetchpriority="high"><div class="hero-sticker">NEW<br><b>COLLECTION</b><span>✦</span></div></div>
+      </div>
+    </section>
+    <section class="perks container" aria-label="Ventajas"><div>✦ <span>Estilo auténtico</span></div><div>◈ <span>Prendas seleccionadas</span></div><div>♡ <span>Atención personalizada</span></div><div>↗ <span>Consulta por WhatsApp</span></div></section>
+    <section class="section catalog-section" id="catalogo"><div class="container"><div class="section-heading"><div><span class="eyebrow">EXPLORA CAMP STORE</span><h2>Encuentra tu <em>favorito.</em></h2><p>Descubre las prendas de nuestra colección.</p></div><span class="collection-pill">✦ Nuestra colección</span></div>
+      <div class="toolbar"><label class="search-wrap"><span aria-hidden="true">⌕</span><input id="searchInput" type="search" placeholder="Buscar prendas..." aria-label="Buscar prendas"></label><select id="categoryFilter" aria-label="Filtrar por categoría"><option value="todas">Todas las categorías</option></select><select id="sortFilter" aria-label="Ordenar productos"><option value="destacados">Destacados</option><option value="menor">Precio: menor a mayor</option><option value="mayor">Precio: mayor a menor</option><option value="nombre">Nombre A-Z</option></select></div>
+      <div class="category-chips" id="categoryChips" aria-label="Categorías"></div><div class="results-row"><p id="resultCount" aria-live="polite"></p><button id="clearFilters" class="clear-btn" type="button">Limpiar filtros ↺</button></div><div class="product-grid" id="productGrid"></div><div class="empty-state" id="emptyState" hidden><span>⌕</span><h3>No encontramos prendas</h3><p>Prueba otra búsqueda o categoría.</p><button class="btn btn-primary" id="emptyReset" type="button">Ver todos los productos</button></div>
+    </div></section>
+    <section class="feature-section" id="nosotros"><div class="container feature-grid"><div class="feature-image"><img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1000&q=85&auto=format&fit=crop" alt="Interior de una tienda de ropa" loading="lazy"></div><div class="feature-copy"><span class="eyebrow">SOBRE NOSOTROS</span><h2>Moda que va <em>contigo.</em></h2><p>En Camp Store creemos que vestir bien es sentirte tú mismo. Nuestro catálogo reúne prendas cómodas y versátiles para acompañarte en cada ocasión.</p><p>¿Te gustó una prenda? Escríbenos y te ayudamos a elegir talla, color y disponibilidad.</p><a href="#catalogo" class="btn btn-primary">Explorar productos →</a></div></div></section>
+    <section class="contact-section" id="contacto"><div class="container contact-content"><span class="eyebrow">¿TIENES ALGUNA PREGUNTA?</span><h2>Hablemos de tu <em>próximo look.</em></h2><p>Consulta disponibilidad, tallas y colores directamente con nuestra tienda.</p><a id="contactWhatsapp" class="btn btn-light" href="#" target="_blank" rel="noopener noreferrer">✆ Escríbenos por WhatsApp ↗</a><p class="contact-note">Horario, dirección y redes sociales: personalízalos antes de publicar.</p></div></section>
+  </main>
+  <footer class="footer"><div class="container footer-content"><div><a class="brand footer-brand" href="#inicio"><span class="brand-mark">C</span><span>CAMP <b>STORE</b><small>YOUR STYLE, YOUR WAY</small></span></a><p>Ropa para expresar tu estilo.</p></div><div><strong>Explora</strong><a href="#inicio">Inicio</a><a href="#catalogo">Catálogo</a><a href="#nosotros">Nosotros</a></div><div><strong>Contáctanos</strong><a id="footerWhatsapp" href="#" target="_blank" rel="noopener noreferrer">WhatsApp ↗</a><span>La Paz, Bolivia (editar ubicación)</span></div></div><div class="container footer-bottom">© <span id="year"></span> Camp Store. Todos los derechos reservados.</div></footer>
+  <a class="whatsapp-float" id="floatingWhatsapp" href="#" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">✆</a>
+  <dialog id="productDialog" class="product-dialog" aria-labelledby="dialogTitle"><button class="dialog-close" id="dialogClose" aria-label="Cerrar detalles" type="button">×</button><div id="dialogContent"></div></dialog>
+</body>
+</html>
